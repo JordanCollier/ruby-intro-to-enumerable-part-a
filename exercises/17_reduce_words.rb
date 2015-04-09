@@ -1,9 +1,9 @@
 def reduce(input)
-  ham = ""
+  result = ""
   input.each do |x|
-    ham << x
+    result << x
   end
-  ham
+  result
 end
 # ------ code above this line ------
 
