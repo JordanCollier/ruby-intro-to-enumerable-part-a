@@ -1,4 +1,12 @@
-
+def group_by(input, sym)
+  hash = Hash.new { [] }
+  input.each do |a|
+    hash[a[sym]] = hash[a[sym]] << a
+  end
+  hash
+  #
+  # input.group_by { |a| a[sym] }
+end
 # ------ code above this line ------
 
 require 'rspec/autorun'

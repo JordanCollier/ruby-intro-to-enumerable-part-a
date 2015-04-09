@@ -1,3 +1,12 @@
+def find_by_field_name(input, symbol, value)
+  hash = nil
+  input.each do |input|
+    if  input[symbol] == value
+      hash = input
+    end
+  end
+  hash
+end
 
 # ------ code above this line ------
 

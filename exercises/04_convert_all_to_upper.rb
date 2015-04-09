@@ -1,4 +1,7 @@
 def convert_all_to_upper_case(words)
+  words.map do |word|
+    word.upcase
+  end
 end
 
 # ------ code above this line ------
